@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="swiper/swiper.min.css"/>
+    <style>
+        .swiper-container{
+            border: 1px dashed chartreuse;
+            padding: 100px 0;
+        }
+        .swiper-slide{
+            width: 200px;
+            height: 200px;
+        }
+        img{
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+<!-- Swiper -->
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img\02.head-icons\lofter_header_icon_ (3).jpg" alt=""/></div>
+        <div class="swiper-slide"><img src="img\02.head-icons\lofter_header_icon_ (4).jpg" alt=""/></div>
+        <div class="swiper-slide"><img src="img\02.head-icons\lofter_header_icon_ (6).jpg" alt=""/></div>
+        <div class="swiper-slide"><img src="img\02.head-icons\lofter_header_icon_ (17).jpg" alt=""/></div>
+        <div class="swiper-slide"><img src="img\02.head-icons\lofter_header_icon_ (23).jpg" alt=""/></div>
+        <div class="swiper-slide"><img src="img\02.head-icons\lofter_header_icon_ (29).jpg" alt=""/></div>
+        <div class="swiper-slide"><img src="img\02.head-icons\lofter_header_icon_ (52).jpg" alt=""/></div>
+        <div class="swiper-slide"><img src="img\02.head-icons\lofter_header_icon_ (77).jpg" alt=""/></div>
+        <div class="swiper-slide"><img src="img\02.head-icons\lofter_header_icon_ (108).jpg" alt=""/></div>
+        <div class="swiper-slide"><img src="img\02.head-icons\lofter_header_icon_ (114).jpg" alt=""/></div>
+    </div>
+    <!-- Add Pagination 是轮播图的小圆点-->
+    <!--<div class="swiper-pagination"></div>-->
+</div>
+
+</body>
+</html>
+<script src="swiper/swiper.min.js"></script>
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflow: {
+//            图片的中心轴位置
+            rotate: 0,
+//            图片与图片之间的距离
+            stretch: -100,
+//            改变图片的显示方式
+            depth: 1000,
+            modifier: 1,
+            slideShadows : true
+        }
+    });
+</script>
